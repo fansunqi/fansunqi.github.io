@@ -21,7 +21,7 @@
 
       .container {
           display: grid;
-          grid-template-columns: repeat(7, 1fr);
+          grid-template-columns: repeat(6, 1fr);
           grid-gap: 10px;
           padding: 10px;
       }
@@ -36,11 +36,21 @@
 
     <h2> latent warpping实验</h2>
     prompts:<br>
+    <br>
     - "a man is skiing"<br>
+    <br>
     - "a man, wearing pink clothes, is skiing at sunset"<br>
     - "mickey mouse is skiing on the snow"<br>
     - "spider man is skiing on the beach, cartoon style"<br> 
     - "wonder woman, wearing a cowboy hat, is skiing"<br>
+    <br>
+    - "spider man is skiing on the beach"<br> 
+    - "spider man is skiing" <br>
+    - "a man is surfing"<br>
+    - "superman is skiing"<br>
+    - "superman is skiing, cartoon style"<br>
+    - "a man is skiing on the mountain"<br>
+    - "a man is skiing in the storm"<br>
     <h3> tune-a-video 原版</h3>
     <div class="container">
         <div class="gif-container">
@@ -62,36 +72,140 @@
         <div class="gif-container">
             <img src="latent_warpping/ori/wonder woman, wearing a cowboy hat, is skiing.gif" alt="GIF 2" width="100%" />
         </div>
+
+        <div class="gif-container">
+            <img src="latent_warpping/ori/spider man is skiing on the beach.gif" alt="GIF 2" width="100%" />
+        </div>
+
+        <div class="gif-container">
+            <img src="latent_warpping/ori/spider man is skiing.gif" alt="GIF 2" width="100%" />
+        </div>
+
+        <div class="gif-container">
+            <img src="latent_warpping/ori/a man is surfing.gif" alt="GIF 2" width="100%" />
+        </div>
+
+        <div class="gif-container">
+            <img src="latent_warpping/ori/superman is skiing.gif" alt="GIF 2" width="100%" />
+        </div>
+
+        <div class="gif-container">
+            <img src="latent_warpping/ori/superman is skiing, cartoon style.gif" alt="GIF 2" width="100%" />
+        </div>
+
+        <div class="gif-container">
+            <img src="latent_warpping/ori/a man is skiing on the mountain.gif" alt="GIF 2" width="100%" />
+        </div>
+
+        <div class="gif-container">
+            <img src="latent_warpping/ori/a man is skiing in the storm.gif" alt="GIF 2" width="100%" />
+        </div>
     </div>
-    <p style="padding-left: 30px; display: inline;">训练样本
-    <p style="padding-left: 330px; display: inline;">测试集
 
 
 
-    <h3> latent warpping </h3>
+    <h3> latent warping (一个样本（下面的第1个）训练 warp module)</h3>
     <div class="container">
         <div class="gif-container">
-            <img src="latent_warpping/0814/a man is skiing.gif" alt="GIF 0" width="100%"/>
+            <img src="latent_warpping/one_sample/a man is skiing.gif" alt="GIF 0" width="100%"/>
         </div>
 
         <div class="gif-container">
-            <img src="latent_warpping/0814/a man, wearing pink clothes, is skiing at sunset.gif" alt="GIF 1" width="100%" />
+            <img src="latent_warpping/one_sample/a man, wearing pink clothes, is skiing at sunset.gif" alt="GIF 1" width="100%" />
         </div>
 
         <div class="gif-container">
-            <img src="latent_warpping/0814/mickey mouse is skiing on the snow.gif" alt="GIF 1" width="100%" />
+            <img src="latent_warpping/one_sample/mickey mouse is skiing on the snow.gif" alt="GIF 1" width="100%" />
         </div>
 
         <div class="gif-container">
-            <img src="latent_warpping/0814/spider man is skiing on the beach, cartoon style.gif" alt="GIF 2" width="100%" />
+            <img src="latent_warpping/one_sample/spider man is skiing on the beach, cartoon style.gif" alt="GIF 2" width="100%" />
         </div>
 
         <div class="gif-container">
-            <img src="latent_warpping/0814/wonder woman, wearing a cowboy hat, is skiing.gif" alt="GIF 2" width="100%" />
+            <img src="latent_warpping/one_sample/wonder woman, wearing a cowboy hat, is skiing.gif" alt="GIF 2" width="100%" />
+        </div>
+
+        <div class="gif-container">
+            <img src="latent_warpping/one_sample/spider man is skiing on the beach.gif" alt="GIF 2" width="100%" />
+        </div>
+
+        <div class="gif-container">
+            <img src="latent_warpping/one_sample/spider man is skiing.gif" alt="GIF 2" width="100%" />
+        </div>
+
+        <div class="gif-container">
+            <img src="latent_warpping/one_sample/a man is surfing.gif" alt="GIF 2" width="100%" />
+        </div>
+
+        <div class="gif-container">
+            <img src="latent_warpping/one_sample/superman is skiing.gif" alt="GIF 2" width="100%" />
+        </div>
+
+        <div class="gif-container">
+            <img src="latent_warpping/one_sample/superman is skiing, cartoon style.gif" alt="GIF 2" width="100%" />
+        </div>
+
+        <div class="gif-container">
+            <img src="latent_warpping/one_sample/a man is skiing on the mountain.gif" alt="GIF 2" width="100%" />
+        </div>
+
+        <div class="gif-container">
+            <img src="latent_warpping/one_sample/a man is skiing in the storm.gif" alt="GIF 2" width="100%" />
         </div>
     </div>
-    <p style="padding-left: 30px; display: inline;">训练样本
-    <p style="padding-left: 330px; display: inline;">测试集
+
+
+    <h3> latent warping (5个样本（下面的前5个）训练 warp module)</h3>
+    <div class="container">
+        <div class="gif-container">
+            <img src="latent_warpping/5_sample/a man is skiing.gif" alt="GIF 0" width="100%"/>
+        </div>
+
+        <div class="gif-container">
+            <img src="latent_warpping/5_sample/a man, wearing pink clothes, is skiing at sunset.gif" alt="GIF 1" width="100%" />
+        </div>
+
+        <div class="gif-container">
+            <img src="latent_warpping/5_sample/mickey mouse is skiing on the snow.gif" alt="GIF 1" width="100%" />
+        </div>
+
+        <div class="gif-container">
+            <img src="latent_warpping/5_sample/spider man is skiing on the beach, cartoon style.gif" alt="GIF 2" width="100%" />
+        </div>
+
+        <div class="gif-container">
+            <img src="latent_warpping/5_sample/wonder woman, wearing a cowboy hat, is skiing.gif" alt="GIF 2" width="100%" />
+        </div>
+
+        <div class="gif-container">
+            <img src="latent_warpping/5_sample/spider man is skiing on the beach.gif" alt="GIF 2" width="100%" />
+        </div>
+
+        <div class="gif-container">
+            <img src="latent_warpping/5_sample/spider man is skiing.gif" alt="GIF 2" width="100%" />
+        </div>
+
+        <div class="gif-container">
+            <img src="latent_warpping/5_sample/a man is surfing.gif" alt="GIF 2" width="100%" />
+        </div>
+
+        <div class="gif-container">
+            <img src="latent_warpping/5_sample/superman is skiing.gif" alt="GIF 2" width="100%" />
+        </div>
+
+        <div class="gif-container">
+            <img src="latent_warpping/5_sample/superman is skiing, cartoon style.gif" alt="GIF 2" width="100%" />
+        </div>
+
+        <div class="gif-container">
+            <img src="latent_warpping/5_sample/a man is skiing on the mountain.gif" alt="GIF 2" width="100%" />
+        </div>
+
+        <div class="gif-container">
+            <img src="latent_warpping/5_sample/a man is skiing in the storm.gif" alt="GIF 2" width="100%" />
+        </div>
+    </div>
 
     <!-- <h2>光流限制实验</h2>
     <h3>a car is riding in the desert</h3>
