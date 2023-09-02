@@ -34,7 +34,127 @@
   </head>
   <body>
 
-    <h2> latent warpping实验</h2>
+    <h2>landmark-controlnet效果</h2>
+    带controlnet训练的版本<br>
+    如果一张卡上的bs为2，视频长度只能设置为8，否则会爆显存，下面是视频长度为8的效果（就是在reference视频中截取8帧，抽取landmark进行control的结果）<br>
+    之后试试视频长度设置为16的情况<br>
+    第一张图是reference, 后面是使用不同的checkpoint生成的效果<br>
+    感受：reference的挑选很重要<br>
+    <br>
+    <div class="container">
+        <div class="gif-container">
+            <img src="landmark-controlnet-results/asia-girl-smile-228/asia_girl_smile_228.gif" alt="GIF 0" width="100%"/>
+        </div>
+
+        <div class="gif-container">
+            <img src="landmark-controlnet-results/asia-girl-smile-228/1-a-girl-is-smiling,-upper-body,-beautiful-face,-straight-hair,.gif" alt="GIF 1" width="100%" />
+        </div>
+
+        <div class="gif-container">
+            <img src="landmark-controlnet-results/asia-girl-smile-228/10-a-girl-is-smiling,-upper-body,-beautiful-face,-straight-hair,.gif" alt="GIF 1" width="100%" />
+        </div>
+
+        <div class="gif-container">
+            <img src="landmark-controlnet-results/asia-girl-smile-228/4-a-girl-is-smiling,-upper-body,-beautiful-face,-straight-hair,.gif" alt="GIF 2" width="100%" />
+        </div>
+
+        <div class="gif-container">
+            <img src="landmark-controlnet-results/asia-girl-smile-228/5-a-girl-is-smiling,-upper-body,-beautiful-face,-straight-hair,.gif" alt="GIF 2" width="100%" />
+        </div>
+
+        <div class="gif-container">
+            <img src="landmark-controlnet-results/asia-girl-smile-228/6-a-girl-is-smiling,-upper-body,-beautiful-face,-straight-hair,.gif" alt="GIF 2" width="100%" />
+        </div>
+
+        <div class="gif-container">
+            <img src="landmark-controlnet-results/asia-girl-smile-228/7-a-girl-is-smiling,-upper-body,-beautiful-face,-straight-hair,.gif" alt="GIF 2" width="100%" />
+        </div>
+
+        <div class="gif-container">
+            <img src="landmark-controlnet-results/asia-girl-smile-228/8-a-girl-is-smiling,-upper-body,-beautiful-face,-straight-hair,.gif" alt="GIF 2" width="100%" />
+        </div>
+
+    </div>
+<!-- 
+    <div class="container">
+        <div class="gif-container">
+            <img src="landmark-controlnet-results/asia-girl-smile-197/asia_girl_smile_197.gif" alt="GIF 0" width="100%"/>
+        </div>
+
+        <div class="gif-container">
+            <img src="landmark-controlnet-results/asia-girl-smile-197/1-a-girl-is-smiling,-upper-body,-beautiful-face,-straight-hair,.gif" alt="GIF 1" width="100%" />
+        </div>
+
+        <div class="gif-container">
+            <img src="landmark-controlnet-results/asia-girl-smile-197/2-a-girl-is-smiling,-upper-body,-beautiful-face,-straight-hair,.gif" alt="GIF 1" width="100%" />
+        </div>
+
+        <div class="gif-container">
+            <img src="landmark-controlnet-results/asia-girl-smile-197/3-a-girl-is-smiling,-upper-body,-beautiful-face,-straight-hair,.gif" alt="GIF 2" width="100%" />
+        </div>
+
+        <div class="gif-container">
+            <img src="landmark-controlnet-results/asia-girl-smile-197/4-a-girl-is-smiling,-upper-body,-beautiful-face,-straight-hair,.gif" alt="GIF 2" width="100%" />
+        </div>
+
+        <div class="gif-container">
+            <img src="landmark-controlnet-results/asia-girl-smile-197/5-a-girl-is-smiling,-upper-body,-beautiful-face,-straight-hair,.gif" alt="GIF 2" width="100%" />
+        </div>
+
+
+    </div> -->
+
+    <div class="container">
+        <div class="gif-container">
+            <img src="landmark-controlnet-results/asia-girl-smile-48/asia_girl_smile_48.gif" alt="GIF 0" width="100%"/>
+        </div>
+
+        <div class="gif-container">
+            <img src="landmark-controlnet-results/asia-girl-smile-48/1-a-girl-is-smiling,-upper-body,-beautiful-face,-straight-hair,.gif" alt="GIF 1" width="100%" />
+        </div>
+
+        <div class="gif-container">
+            <img src="landmark-controlnet-results/asia-girl-smile-48/2-a-girl-is-smiling,-upper-body,-beautiful-face,-straight-hair,.gif" alt="GIF 1" width="100%" />
+        </div>
+
+        <div class="gif-container">
+            <img src="landmark-controlnet-results/asia-girl-smile-48/3-a-girl-is-smiling,-upper-body,-beautiful-face,-straight-hair,.gif" alt="GIF 2" width="100%" />
+        </div>
+
+        <div class="gif-container">
+            <img src="landmark-controlnet-results/asia-girl-smile-48/4-a-girl-is-smiling,-upper-body,-beautiful-face,-straight-hair,.gif" alt="GIF 2" width="100%" />
+        </div>
+
+        <div class="gif-container">
+            <img src="landmark-controlnet-results/asia-girl-smile-48/5-a-girl-is-smiling,-upper-body,-beautiful-face,-straight-hair,.gif" alt="GIF 2" width="100%" />
+        </div>
+
+
+        <div class="gif-container">
+            <img src="landmark-controlnet-results/asia-girl-smile-48/6-a-girl-is-smiling,-upper-body,-beautiful-face,-straight-hair,.gif" alt="GIF 2" width="100%" />
+        </div>
+
+        <div class="gif-container">
+            <img src="landmark-controlnet-results/asia-girl-smile-48/7-a-girl-is-smiling,-upper-body,-beautiful-face,-straight-hair,.gif" alt="GIF 2" width="100%" />
+        </div>
+
+        <div class="gif-container">
+            <img src="landmark-controlnet-results/asia-girl-smile-48/8-a-girl-is-smiling,-upper-body,-beautiful-face,-straight-hair,.gif" alt="GIF 2" width="100%" />
+        </div>
+
+        <div class="gif-container">
+            <img src="landmark-controlnet-results/asia-girl-smile-48/9-a-girl-is-smiling,-upper-body,-beautiful-face,-straight-hair,.gif" alt="GIF 2" width="100%" />
+        </div>
+
+
+
+    </div>
+
+
+
+   
+
+    <!-- <h2> latent warpping实验</h2>
     prompts:<br>
     <br>
     - "a man is skiing"<br>
@@ -205,7 +325,7 @@
         <div class="gif-container">
             <img src="latent_warpping/5_sample/a man is skiing in the storm.gif" alt="GIF 2" width="100%" />
         </div>
-    </div>
+    </div> -->
 
     <!-- <h2>光流限制实验</h2>
     <h3>a car is riding in the desert</h3>
