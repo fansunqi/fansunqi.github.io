@@ -3,10 +3,18 @@
 <head>
   <meta charset="utf-8">
   <meta name="description"
-        content="MagiCapture: High-Resolution Multi-Concept Portrait Customization">
+        content="FAAC: Facial Animation Generation with Anchor Frame and Conditional Control for Superior Fidelity and Editability">
   <meta name="keywords" content="Diffusion, Finetuning, Customization, Personalization, Face">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>MagiCapture: High-Resolution Multi-Concept Portrait Customization</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="stylesheet" type="text/css" href="lamp.css">
+    <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+  <link rel="icon" type="image/png" href="../../images/logo.png">
+
+  <title>FAAC: Facial Animation Generation with Anchor Frame and Conditional Control for Superior Fidelity and Editability</title>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <!--<script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script> -->
@@ -68,31 +76,38 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">MagiCapture: High-Resolution Multi-Concept Portrait Customization</h1>
+          <h1 class="title is-1 publication-title">FAAC: Facial Animation Generation with Anchor Frame and Conditional Control for Superior Fidelity and Editability</h1>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
-              <a href="">Junha Hyung</a><sup>1,*</sup>,</span>
+              <a href="">Linze Li</a><sup>1</sup>,</span>
             <span class="author-block">
-              <a href="">Jaeyo Shin</a><sup>2,*</sup>,</span>
+              <a href="">Sunqi Fan</a><sup>2</sup>,</span>
             <span class="author-block">
-              <a href="">Jaegul Choo</a><sup>1</sup>,
-            </span>
+              <a href="">Hengjun Pu</a><sup>2</sup>,</span>
+            <span class="author-block">
+              <a href="">Zhaodong Bing</a><sup>1</sup>,</span>
+            <span class="author-block">
+              <a href="">Yao Tang</a><sup>1</sup>,</span>
+            <span class="author-block">
+              <a href="">Tianzhu Ye</a><sup>2</sup>,</span>
+            <span class="author-block">
+              <a href="">Tong Yang</a><sup>1</sup>,</span>
+            <span class="author-block">
+              <a href="">Liangyu Chen</a><sup>1</sup>,</span>
+            <span class="author-block">
+                <a href="">Jiajun Liang</a><sup>1, †</sup>,</span>
           </div>
 
           <div class="is-size-5 publication-authors">
-            <span class="author-block"><sup>1</sup>KAIST AI</span>
-            <span class="author-block"><sup>2</sup>Sogang University</span>
-          </div>
-
-          <div class="is-size-5 publication-authors">
-            <span class="author-block"><sup>*</sup>Equal contribution</span>
+            <span class="author-block"><sup>1</sup>MEGVII Technology</span>
+            <span class="author-block"><sup>2</sup>Tsinghua University</span>
           </div>
 
           <div class="column has-text-centered">
             <div class="publication-links">
               <!-- PDF Link. -->
               <span class="link-block">
-                <a href="./static/pdf/MagiCapture.pdf"
+                <a href="./static/pdf/FACC.pdf"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fas fa-file-pdf"></i>
@@ -101,7 +116,7 @@
                 </a>
               </span>
               <span class="link-block">
-                <a href="https://arxiv.org/abs/2309.06895"
+                <a href="https://arxiv.org/abs/2312.03775"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="ai ai-arxiv"></i>
@@ -154,7 +169,7 @@
     <!-- main fig -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-full">
-        <h2 class="title is-3">MagiCapture </h2>
+        <h2 class="title is-3">FACC</h2>
             <img src="./static/images/main_fig.png"
                  class="main figure"
                  alt="main figure"/>
@@ -169,7 +184,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Large-scale text-to-image models including Stable Diffusion are capable of generating high-fidelity photorealistic portrait images. There is an active research area dedicated to personalizing these models, aiming to synthesize specific subjects or styles using provided sets of reference images. However, despite the plausible results from these personalization methods, they tend to produce images that often fall short of realism and are not yet on a commercially viable level. This is particularly noticeable in portrait image generation, where any unnatural artifact in human faces is easily discernible due to our inherent human bias. To address this, we introduce MagiCapture, a personalization method for integrating subject and style concepts to generate high-resolution portrait images using just a few subject and style references. For instance, given a handful of random selfies, our fine-tuned model can generate high-quality portrait images in specific styles, such as passport or profile photos. The main challenge with this task is the absence of ground truth for the composed concepts, leading to a reduction in the quality of the final output and an identity shift of the source subject. To address these issues, we present a novel Attention Refocusing loss coupled with auxiliary priors, both of which facilitate robust learning within this weakly supervised learning setting. Our pipeline also includes additional post-processing steps to ensure the creation of highly realistic outputs. MagiCapture outperforms other baselines in both quantitative and qualitative evaluations and can also be generalized to other non-human objects.
+            Over recent years, diffusion models have facilitated significant advancements in video generation. Yet, the creation of face-related videos still confronts issues such as low facial fidelity, lack of frame consistency, limited editability and uncontrollable human poses. To address these challenges, we introduce a facial animation generation method that enhances both face identity fidelity and editing capabilities while ensuring frame consistency. This approach incorporates the concept of an anchor frame to counteract the degradation of generative ability in original text-to-image models when incorporating a motion module. We propose two strategies towards this objective: training-free and training-based anchor frame methods. Our method's efficacy has been validated on multiple representative DreamBooth and LoRA models, delivering substantial improve ments over the original outcomes in terms of facial fidelity, text-to-image editability, and video motion. Moreover, we introduce conditional control using a 3D parametric face model to capture accurate facial movements and expressions. This solution augments the creative possibilities for facial animation generation through the integration of multiple control signals.
           </p>
         </div>
       </div>
@@ -180,139 +195,213 @@
 </section>
 
 
-<section class="section">
-    <!--
-  <div class="container is-max-desktop">
+<div style="background-color: #f5f5f5; margin-right: auto; margin-left: auto;">
+  <div class="root-content" style="padding-top: 10px; width: 70%; padding-bottom: 10px;">
+      <h1 class="section-name">&#127916;&nbsp;&nbsp; Personalized Facial Animation &nbsp;&nbsp;&#127916;</h1>
+      <table style="width: 100%;">
+          <tbody>
+              <tr class="result-row">
+                  <td>
+                    <img src="FACC_results/main_results/LiamNesson/[train-base]A close-up of a guy with a relaxed and easygoing expression, embodying a carefree and laid-back attitude, High detailed, High precision, Hyper quality..gif" width="512" height="512">
+                  </td>
 
-    <div class="columns is-centered">
-    -->
-
-      <!-- Visual Effects. -->
-      <!--
-      <div class="column">
-        <div class="content">
-          <h2 class="title is-3">Visual Effects</h2>
-          <p>
-            Using <i>nerfies</i> you can create fun visual effects. This Dolly zoom effect
-            would be impossible without nerfies since it would require going through a wall.
-          </p>
-          <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/dollyzoom-stacked.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-      </div>
-      -->
-      <!--/ Visual Effects. -->
-
-      <!-- Matting. -->
-      <!--
-      <div class="column">
-        <h2 class="title is-3">Matting</h2>
-        <div class="columns is-centered">
-          <div class="column content">
-            <p>
-              As a byproduct of our method, we can also solve the matting problem by ignoring
-              samples that fall outside of a bounding box during rendering.
-            </p>
-            <video id="matting-video" controls playsinline height="100%">
-              <source src="./static/videos/matting.mp4"
-                      type="video/mp4">
-            </video>
-          </div>
-            -->
-
-            <!--
-        </div>
-      </div>
-    </div>
-    -->
-    <!--/ Matting. -->
-
-    <!-- Animation. -->
-    <!--
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3">Animation</h2>
-    -->
-        <!-- Interpolating. -->
-        <!--
-        <h3 class="title is-4">Interpolating states</h3>
-        <div class="content has-text-justified">
-          <p>
-            We can also animate the scene by interpolating the deformation latent codes of two input
-            frames. Use the slider here to linearly interpolate between the left frame and the right
-            frame.
-          </p>
-        </div>
-        <div class="columns is-vcentered interpolation-panel">
-          <div class="column is-3 has-text-centered">
-            <img src="./static/images/interpolate_start.jpg"
-                 class="interpolation-image"
-                 alt="Interpolate start reference image."/>
-            <p>Start Frame</p>
-          </div>
-          <div class="column interpolation-video-column">
-            <div id="interpolation-image-wrapper">
-              Loading...
-            </div>
-            <input class="slider is-fullwidth is-large is-info"
-                   id="interpolation-slider"
-                   step="1" min="0" max="100" value="0" type="range">
-          </div>
-          <div class="column is-3 has-text-centered">
-            <img src="./static/images/interpolate_end.jpg"
-                 class="interpolation-image"
-                 alt="Interpolation end reference image."/>
-            <p class="is-bold">End Frame</p>
-          </div>
-        </div>
-        <br/>
-        -->
-        <!--/ Interpolating. -->
-
-        <!-- Re-rendering. -->
-        <!--
-        <h3 class="title is-4">Re-rendering the input video</h3>
-        <div class="content has-text-justified">
-          <p>
-            Using <span class="dnerf">Nerfies</span>, you can re-render a video from a novel
-            viewpoint such as a stabilized camera by playing back the training deformations.
-          </p>
-        </div>
-        <div class="content has-text-centered">
-          <video id="replay-video"
-                 controls
-                 muted
-                 preload
-                 playsinline
-                 width="75%">
-            <source src="./static/videos/replay.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        -->
-        <!--/ Re-rendering. -->
-
-        <!--
-      </div>
-    </div>
-        -->
-    <!--/ Animation. -->
-
+                  <td>
+                    <img src="FACC_results/main_results/LiamNesson/[train-base]a man, tilt his head, wearing a hat, against a beach background.gif" width="512" height="512">
+                  </td>
+                  <td>
+                    <img src="FACC_results/main_results/LiamNesson/[train-free]A man with a confident and charismatic smile, making eye contact with the camera, High detailed, High precision, Hyper quality..gif" width="512" height="512">
+                  </td>
+                  
+              </tr>
+              <tr class="prompt-row">
+                  <td>A close-up of a guy with a relaxed and easygoing expression</td>
+                  <td>A man, wearing a hat, against a beach background</td>
+                  <td>A man with a confident smile, making eye contact with the camera</td>
+              </tr>
+              <tr class="result-row">
+                  <!-- <td>
+                      <img src="FACC_results/main_results/Angelina_joile_db1/[train-base]a close-up of a woman with elegant pearl earrings and a vintage hairstyle, High detailed, High precision, Hyper quality..gif">
+                  </td>                -->
+                  <td>
+                    <img src="FACC_results/main_results/Angelina_joile_db1/A portrait of a woman in a natural setting, wearing a headband, High detailed, High precision, Hyper quality..gif">
+                  </td>
+                  <td>
+                      <img src="FACC_results/main_results/Angelina_joile_db1/A close-up shot of a girl with glasses and earrings, High detailed, High precision, Hyper quality..gif">
+                  </td>
+                  <td>
+                    <img src="FACC_results/main_results/Angelina_joile_db1/[train-base]A girl adorned with a colorful tattoo on the cheek, High detailed, High precision, Hyper quality..gif">
+                  </td>
+                  <!-- <td>
+                    <img src="FACC_results/main_results/Angelina_joile_db1/[train-free]a close-up shot of a woman with vibrant, multicolored hair, High detailed, High precision, Hyper quality..gif">
+                  </td> -->
+              </tr>
+              <tr class="prompt-row">
+                  <td>A portrait of a woman in a natural setting, wearing a headband</td>
+                  <td>A close-up shot of a girl with glasses and earrings</td>
+                  <td>A girl adorned with a colorful tattoo on the cheek</td>
+                  <!-- <td>a close-up shot of a woman with vibrant, multicolored hair</td> -->
+              </tr>
+              <tr class="result-row">
+                <td>
+                    <img src="FACC_results/main_results/Suriya/[train-free]A man with a goatee and a leather cowboy hat, High detailed, High precision, Hyper quality..gif">
+                </td>
+                <td>
+                    <img src="FACC_results/main_results/Suriya/[train-free]A man with a goatee and a piercing gaze, against a backdrop of mountain peaks, High detailed, High precision, Hyper quality..gif">
+                </td>
+                <td>
+                    <img src="FACC_results/main_results/Suriya/[train-free]A man with a surprised and delighted expression, showcasing a moment of unexpected joy, High detailed, High precision, Hyper quality..gif">
+                </td>
+              </tr>
+              <tr class="prompt-row">
+                  <td>A man with a goatee and a leather cowboy hat</td>
+                  <td>A man with a piercing gaze against a backdrop of mountain peaks</td>
+                  <td>A man with a surprised and delighted expression, showcasing a moment of unexpected joy</td>
+              </tr>
+              <tr class="result-row">
+                  <td>
+                      <img src="FACC_results/main_results/Angelina_joile/a beautiful woman starts to talk, bright, beautiful face, realistic,solo.gif">
+                  </td>
+                  <td>
+                      <img src="FACC_results/main_results/Angelina_joile/a close-up of a woman with elegant pearl earrings and a vintage hairstyle.gif">
+                  </td>
+                  <td>
+                      <img src="FACC_results/main_results/Angelina_joile/a close-up shot of a woman with vibrant, multicolored hair.gif">
+                  </td>
+              </tr>
+              <tr class="prompt-row">
+                  <td>A beautiful woman starts to talk, bright, beautiful face, realistic, solo</td>
+                  <td>A close-up shot of a woman with elegant pearl earrings and a vintage hairstyle</td>
+                  <td>A close-up shot of a woman with vibrant, multicolored hair</td>
+              </tr>
+              
+              
+          </tbody>
+      </table>
+      <p class="section-content-text"><strong>Our text-to-video results</strong>. The video prompts are listed, and the motion prompts are "A horse run", "Firework", "Plays the guitar", "Birds fly", respctively. Our LAMP works effectively on diverse motions. The generated videos are temporal consistent and close to the video prompts. Moreover, two advantages of LAMP can be reflected in the above results. (1) The proposed first-frame-conditioned training strategy allows us to use powerful SD-XL for first-frame generation, which is beneficial to producing highly detailed following frames. (2) Good semantic generalization properties of the diffusion model are preserved (e.g. imposing the motio "play the guitar" on GTA5-poster style) since our tuning way.</p>
   </div>
-</section>
+</div>
+
+<div style="background-color: white; margin-right: auto; margin-left: auto;">
+  <div class="root-content" style="padding-top: 10px; width: 70%; padding-bottom: 10px;">
+      <h1 class="section-name">&#127902;&nbsp;&nbsp; Control Results &nbsp;&nbsp;&#127902;</h1>
+      <table style="width: 100%;">
+          <tbody>
+              <tr class="result-row">
+                  <td>
+                    <img src="FACC_results/FACC_with_control/f48/template1_process.gif">
+                  </td>
+
+                  <td>
+                    <img src="FACC_results/FACC_with_control/f48/651-f48-mm0-seed0-a-close-up-shot-of-a-woman-with-vibrant,-multicolored-hair,.gif" width="512" height="512">
+                  </td>
+                  <td>
+                    <img src="FACC_results/FACC_with_control/f48/219-f48-mm0-seed0-A-man-with-a-goatee-and-a-piercing-gaze,-against.gif" width="512" height="512">
+                  </td>
+                  
+              </tr>
+              <tr class="prompt-row">
+                  <td>Driving Template</td>
+                  <td>a close-up shot of a woman with vibrant, multicolored hair</td>
+                  <td>A man with a goatee against a backdrop of mountain peaks</td>
+              </tr>
+              <tr class="result-row">
+                  <!-- <td>
+                      <img src="FACC_results/main_results/Angelina_joile_db1/[train-base]a close-up of a woman with elegant pearl earrings and a vintage hairstyle, High detailed, High precision, Hyper quality..gif">
+                  </td>                -->
+                  <td>
+                    <img src="FACC_results/FACC_with_control/f144/template2_process.gif">
+                  </td>
+                  <td>
+                      <img src="FACC_results/FACC_with_control/f144/[emma-moonfile]585-f144-mm0-seed0-a-woman,-elegant-angel,-crown-on-the-head,-wings-on.gif">
+                  </td>
+                  <td>
+                    <img src="FACC_results/FACC_with_control/f144/[emma-moonfile]249-f144-mm0-seed0-A-portrait-of-a-face-against-a-brick-wall,-wearing.gif">
+                  </td>
+                  <!-- <td>
+                    <img src="FACC_results/main_results/Angelina_joile_db1/[train-free]a close-up shot of a woman with vibrant, multicolored hair, High detailed, High precision, Hyper quality..gif">
+                  </td> -->
+              </tr>
+              <tr class="prompt-row">
+                  <td>Driving Template</td>
+                  <td>a woman, elegant angel, crown on the head, wings on the back, in a floral garden setting</td>
+                  <td>A portrait of a face against a brick wall, wearing a bandana</td>
+                  <!-- <td>a close-up shot of a woman with vibrant, multicolored hair</td> -->
+              </tr>
+              <tr class="result-row">
+                  <td>
+                      <img src="FACC_results/FACC_with_control/f0/template3_process.gif">
+                  </td>
+                  <td>
+                      <img src="FACC_results/FACC_with_control/f0/[Vijay-moonfile]88-f0-mm0-seed0-A-portrait-of-a-man-with-a-goatee,-wearing-a.gif">
+                  </td>
+                  <td>
+                      <img src="FACC_results/FACC_with_control/f0/[liuyifei-maji]116-f0-mm0-seed1-A-portrait-of-a-face-against-a-graffiti-covered-wall,-wearing.gif">
+                  </td>
+              </tr>
+              <tr class="prompt-row">
+                  <!-- <td>A beautiful woman starts to talk, bright, beautiful face, realistic, solo</td> -->
+                  <td>[placeholder:to be fixed][placeholder:to be fixed][placeholder:to be fixed]</td>
+                  <td>A portrait of a guy with a handlebar mustache, wearing a vintage pilot's jacket</td>
+                  <td>A portrait of a face against a graffiti-covered wall, wearing a necklace</td>
+              </tr>
+              <tr class="result-row">
+                  <td>
+                      <img src="FACC_results/FACC_with_control/2-f48/template4_process.gif">
+                  </td>
+                  <td>
+                      <img src="FACC_results/FACC_with_control/2-f48/15-f48-mm0-seed1-a-girl-is-smiling,-bright,-beautiful-face,-realistic,solo,-High.gif">
+                  </td>
+                  <td>
+                      <img src="FACC_results/FACC_with_control/2-f48/115-f48-mm0-seed0-A-portrait-of-a-guy-with-a-handlebar-mustache,-wearing.gif">
+                  </td>
+              </tr>
+              <tr class="prompt-row">
+                  <td>Driving Template</td>
+                  <td>A girl is smiling, bright, beautiful-face,realistic,solo</td>
+                  <td>A portrait of a guy with a handlebar mustache, wearing a vintage pilot's jacket</td>
+              </tr>
+              
+          </tbody>
+      </table>
+      <p class="section-content-text"><strong>Our text-to-video results</strong>. The video prompts are listed, and the motion prompts are "A horse run", "Firework", "Plays the guitar", "Birds fly", respctively. Our LAMP works effectively on diverse motions. The generated videos are temporal consistent and close to the video prompts. Moreover, two advantages of LAMP can be reflected in the above results. (1) The proposed first-frame-conditioned training strategy allows us to use powerful SD-XL for first-frame generation, which is beneficial to producing highly detailed following frames. (2) Good semantic generalization properties of the diffusion model are preserved (e.g. imposing the motio "play the guitar" on GTA5-poster style) since our tuning way.</p>
+  </div>
+</div>
+
+
+<script>
+  window_height =  document.documentElement.clientHeight;
+  video_box = document.getElementById('video-box');
+  title_mask = document.getElementById('title-mask');
+  document.getElementsByTagName
+  imgs = video_box.getElementsByTagName('img');
+  console.log(String(window_height)+'px')
+  video_box.style.height = String(window_height)+'px'
+  title_mask.style.height = String(window_height)+'px'
+  for (i in imgs)
+  {
+      if (i < 64){
+          imgs[i].style.height = String(window_height/4)+'px';
+      }
+  }
+
+var scroll_btn = document.getElementById('scroll-btn');
+  scroll_btn.addEventListener("click",function(){
+      window.scrollTo({top:window_height+30, behavior: 'smooth'});
+  })
+</script>
 
 
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
     <pre><code>
-      @article{hyung2023magicapture,
-        title={MagiCapture: High-Resolution Multi-Concept Portrait Customization},
-        author={Hyung, Junha and Shin, Jaeyo and Choo, Jaegul},
-        journal={arXiv preprint arXiv:2309.06895},
-        year={2023}
+      @misc{li2023faac,
+        title={FAAC: Facial Animation Generation with Anchor Frame and Conditional Control for Superior Fidelity and Editability}, 
+        author={Linze Li and Sunqi Fan and Hengjun Pu and Zhaodong Bing and Yao Tang and Tianzhu Ye and Tong Yang and Liangyu Chen and Jiajun Liang},
+        year={2023},
+        eprint={2312.03775},
+        archivePrefix={arXiv},
+        primaryClass={cs.CV}
       }
     </code></pre>
   </div>
@@ -335,7 +424,8 @@
         <div class="content">
           <p>
             The template of this website is borrowed from <a
-              href="https://github.com/lenerf/lenerf.github.io">LENerF</a>.
+              href="https://github.com/lenerf/lenerf.github.io">LENeRF</a> and <a
+              href="https://rq-wu.github.io/projects/LAMP/">LAMP</a>.
           </p>
         </div>
       </div>
