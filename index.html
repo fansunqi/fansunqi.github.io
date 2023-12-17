@@ -9,10 +9,10 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
-  <link rel="stylesheet" type="text/css" href="lamp.css">
+  <link rel="stylesheet" type="text/css" href="static/css/FACC.css">
     <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
         rel="stylesheet">
-  <link rel="icon" type="image/png" href="../../images/logo.png">
+  <!-- <link rel="icon" type="image/png" href="../../images/logo.png"> -->
 
   <title>FAAC: Facial Animation Generation with Anchor Frame and Conditional Control for Superior Fidelity and Editability</title>
 
@@ -76,26 +76,27 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">FAAC: Facial Animation Generation with Anchor Frame and Conditional Control for Superior Fidelity and Editability</h1>
+          <h1 class="title is-1 publication-title">FAAC: <u>F</u>acial <u>A</u>nimation Generation with <u>A</u>nchor Frame and <u>C</u>onditional Control for Superior Fidelity and Editability</h1>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
-              <a href="">Linze Li</a><sup>1</sup>,</span>
+              <!-- <a href="">Linze Li</a><sup>1</sup>,</span> -->
+              Linze Li<sup>1</sup>,</span>
             <span class="author-block">
-              <a href="">Sunqi Fan</a><sup>2</sup>,</span>
+              Sunqi Fan<sup>2</sup>,</span>
             <span class="author-block">
-              <a href="">Hengjun Pu</a><sup>2</sup>,</span>
+              Hengjun Pu<sup>2</sup>,</span>
             <span class="author-block">
-              <a href="">Zhaodong Bing</a><sup>1</sup>,</span>
+              Zhaodong Bing<sup>1</sup>,</span>
             <span class="author-block">
-              <a href="">Yao Tang</a><sup>1</sup>,</span>
+              Yao Tang<sup>1</sup>,</span>
             <span class="author-block">
-              <a href="">Tianzhu Ye</a><sup>2</sup>,</span>
+              Tianzhu Ye<sup>2</sup>,</span>
             <span class="author-block">
-              <a href="">Tong Yang</a><sup>1</sup>,</span>
+              Tong Yang<sup>1</sup>,</span>
             <span class="author-block">
-              <a href="">Liangyu Chen</a><sup>1</sup>,</span>
+              Liangyu Chen<sup>1</sup>,</span>
             <span class="author-block">
-                <a href="">Jiajun Liang</a><sup>1, †</sup>,</span>
+              Jiajun Liang<sup>1, †</sup>,</span>
           </div>
 
           <div class="is-size-5 publication-authors">
@@ -169,7 +170,7 @@
     <!-- main fig -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-full">
-        <h2 class="title is-3">FACC</h2>
+        <!-- <h2 class="title is-3">FACC</h2> -->
             <img src="./static/images/FACC_main_fig.png"
                  class="main figure"
                  alt="main figure"/>
@@ -196,10 +197,14 @@
 
 
 <div style="background-color: #f5f5f5; margin-right: auto; margin-left: auto;">
-  <div class="root-content" style="padding-top: 10px; width: 70%; padding-bottom: 10px;">
+  <div class="root-content" style="padding-top: 10px; width: 80%; padding-bottom: 10px;">
       <h1 class="section-name">&#127916;&nbsp;&nbsp; Personalized Facial Animation &nbsp;&nbsp;&#127916;</h1>
       <table style="width: 100%;">
+          <col width=33.33%>
+          <col width=33.33%>
+          <col width=33.33%>
           <tbody>
+              <br>
               <tr class="result-row">
                   <td>
                     <img src="FACC_results/main_results/LiamNesson/[train-base]A close-up of a guy with a relaxed and easygoing expression, embodying a carefree and laid-back attitude, High detailed, High precision, Hyper quality..gif" width="512" height="512">
@@ -259,13 +264,13 @@
               </tr>
               <tr class="result-row">
                   <td>
-                      <img src="FACC_results/main_results/Angelina_joile/a beautiful woman starts to talk, bright, beautiful face, realistic,solo.gif">
+                      <img src="FACC_results/main_results/Angelina_joile/2-a beautiful woman starts to talk, bright, beautiful face, realistic,solo.gif">
                   </td>
                   <td>
                       <img src="FACC_results/main_results/Angelina_joile/a close-up of a woman with elegant pearl earrings and a vintage hairstyle.gif">
                   </td>
                   <td>
-                      <img src="FACC_results/main_results/Angelina_joile/a close-up shot of a woman with vibrant, multicolored hair.gif">
+                      <img src="FACC_results/main_results/Angelina_joile/2-a close-up shot of a woman with vibrant, multicolored hair, High detailed, High precision, Hyper quality..gif">
                   </td>
               </tr>
               <tr class="prompt-row">
@@ -277,14 +282,19 @@
               
           </tbody>
       </table>
-      <p class="section-content-text"><strong>Our text-to-video results</strong>. The video prompts are listed, and the motion prompts are "A horse run", "Firework", "Plays the guitar", "Birds fly", respctively. Our LAMP works effectively on diverse motions. The generated videos are temporal consistent and close to the video prompts. Moreover, two advantages of LAMP can be reflected in the above results. (1) The proposed first-frame-conditioned training strategy allows us to use powerful SD-XL for first-frame generation, which is beneficial to producing highly detailed following frames. (2) Good semantic generalization properties of the diffusion model are preserved (e.g. imposing the motio "play the guitar" on GTA5-poster style) since our tuning way.</p>
+      <br>
+      <p class="section-content-text"><strong>Our main results</strong>. We select four representative LoRA character and perform personalized facial animation.  Each line represents a different LoRA character (from top to bottom:  Liam Neeson, Asian Girl, Suriya Sivakumar, Angelina Joile). For each LoRA character, we have employed three prompts to generate facial animations. The prompt corresponding to each video clip is annotated below it. Our FACC works effectively and generate frame-consistent results on diverse characters and prompts. Moreover, two advantages of FACC can be reflected in the above results: (1) face identity fidelity (2) editing capabilities by text prompts. Due to our key-frame strategy, we can better maintain fidelity to characters and text prompt, without being compromised by the motion module.</p>
   </div>
 </div>
 
 <div style="background-color: white; margin-right: auto; margin-left: auto;">
-  <div class="root-content" style="padding-top: 10px; width: 70%; padding-bottom: 10px;">
+  <div class="root-content" style="padding-top: 10px; width: 80%; padding-bottom: 10px;">
       <h1 class="section-name">&#127902;&nbsp;&nbsp; Control Results &nbsp;&nbsp;&#127902;</h1>
       <table style="width: 100%;">
+          <col width=33.33%>
+          <col width=33.33%>
+          <col width=33.33%>
+          <br>
           <tbody>
               <tr class="result-row">
                   <td>
@@ -340,8 +350,8 @@
               </tr>
               <tr class="prompt-row">
                   <!-- <td>A beautiful woman starts to talk, bright, beautiful face, realistic, solo</td> -->
-                  <td>[placeholder:to be fixed][placeholder:to be fixed][placeholder:to be fixed]</td>
-                  <td>A portrait of a guy with a handlebar mustache, wearing a vintage pilot's jacket</td>
+                  <td>Driving Template</td>
+                  <td>A portrait of a man with a goatee, wearing a plaid shirt and surrounded by autumn leaves</td>
                   <td>A portrait of a face against a graffiti-covered wall, wearing a necklace</td>
               </tr>
               <tr class="result-row">
@@ -363,7 +373,8 @@
               
           </tbody>
       </table>
-      <p class="section-content-text"><strong>Our text-to-video results</strong>. The video prompts are listed, and the motion prompts are "A horse run", "Firework", "Plays the guitar", "Birds fly", respctively. Our LAMP works effectively on diverse motions. The generated videos are temporal consistent and close to the video prompts. Moreover, two advantages of LAMP can be reflected in the above results. (1) The proposed first-frame-conditioned training strategy allows us to use powerful SD-XL for first-frame generation, which is beneficial to producing highly detailed following frames. (2) Good semantic generalization properties of the diffusion model are preserved (e.g. imposing the motio "play the guitar" on GTA5-poster style) since our tuning way.</p>
+      <br>
+      <p class="section-content-text"><strong>Our control results</strong>. We demonstrate our FACC-with-control results.  We select four representative driving templates, including  common facial movements such as opening the mouth, blinking, turning the head, and their combinations. Each line represents a different driving template. Then we use the driving template to control the facial animation results, assisted by the text prompt. The specific control method is mentioned in the paper.  The text prompt corresponding to each video clip is annotated below it. The above results indicate that we can generate controllable facial animations with targeted motion patterns. </p>
   </div>
 </div>
 
