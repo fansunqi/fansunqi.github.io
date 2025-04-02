@@ -27,7 +27,7 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I’m an incoming CS PhD student at [Tsinghua University](https://www.tsinghua.edu.cn/en/), advised by Prof. [Shi-Min Hu](https://cg.cs.tsinghua.edu.cn/shimin.htm). My research interest lies in computer vision, with a focus on designing intelligent visual agents to understand the dynamic real world.
+I’m an incoming CS PhD student at [Tsinghua University](https://www.tsinghua.edu.cn/en/), advised by Prof. [Shi-Min Hu](https://cg.cs.tsinghua.edu.cn/#people.htm#shimin.htm). My research interest lies in computer vision, with a focus on designing intelligent visual agents to understand the dynamic real world.
 
 I obtained my Bachelor’s degree in Computer Science from Tsinghua University. You may find my CV here: Sunqi’s Curriculum Vitae. Feel free to reach out to me via email if you have any questions or just want to chat!
 
