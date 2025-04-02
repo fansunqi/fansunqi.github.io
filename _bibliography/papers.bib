@@ -1,7 +1,6 @@
 ---
 ---
 
-@string{aps = {American Physical Society,}}
 
 @misc{fan2025agentickeyframesearchvideo,
       title={Agentic Keyframe Search for Video Question Answering}, 
@@ -10,17 +9,25 @@
       eprint={2503.16032},
       archivePrefix={arXiv},
       primaryClass={cs.CV},
-      url={https://arxiv.org/abs/2503.16032}, 
+      arxiv={https://arxiv.org/abs/2503.16032}, 
+      code={https://github.com/fansunqi/AKeyS}
 }
 
-@misc{li2024flexkbqaflexiblellmpoweredframework,
-      title={FlexKBQA: A Flexible LLM-Powered Framework for Few-Shot Knowledge Base Question Answering}, 
-      author={Zhenyu Li and Sunqi Fan and Yu Gu and Xiuxing Li and Zhichao Duan and Bowen Dong and Ning Liu and Jianyong Wang},
-      year={2024},
-      eprint={2308.12060},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL},
-      url={https://arxiv.org/abs/2308.12060}, 
+@inproceedings{10.1609/aaai.v38i17.29823,
+  author = {Li, Zhenyu and Fan, Sunqi and Gu, Yu and Li, Xiuxing and Duan, Zhichao and Dong, Bowen and Liu, Ning and Wang, Jianyong},
+  title = {FlexKBQA: a flexible LLM-powered framework for few-shot knowledge base question answering},
+  year = {2024},
+  isbn = {978-1-57735-887-9},
+  publisher = {AAAI Press},
+  url = {https://doi.org/10.1609/aaai.v38i17.29823},
+  doi = {10.1609/aaai.v38i17.29823},
+  abstract = {Knowledge base question answering (KBQA) is a critical yet challenging task due to the vast number of entities within knowledge bases and the diversity of natural language questions posed by users. Unfortunately, the performance of most KBQA models tends to decline significantly in real-world scenarios where high-quality annotated data is insufficient. To mitigate the burden associated with manual annotation, we introduce FlexKBQA by utilizing Large Language Models (LLMs) as program translators for addressing the challenges inherent in the few-shot KBQA task. Specifically, FlexKBQA leverages automated algorithms to sample diverse programs, such as SPARQL queries, from the knowledge base, which are subsequently converted into natural language questions via LLMs. This synthetic dataset facilitates training a specialized lightweight model for the KB. Additionally, to reduce the barriers of distribution shift between synthetic data and real user questions, FlexKBQA introduces an execution-guided self-training method to iterative leverage unlabeled user questions. Furthermore, we explore harnessing the inherent reasoning capability of LLMs to enhance the entire framework. Consequently, FlexKBQA delivers substantial flexibility, encompassing data annotation, deployment, and being domain agnostic. Through extensive experiments on GrailQA, We-bQSP, and KQA Pro, we observe that under the few-shot even more challenging zero-shot scenarios, FlexKBQA achieves impressive results with a few annotations, surpassing all previous baselines and even approaching the performance of supervised models, achieving a remarkable 93\% performance relative to the fully-supervised models. We posit that FlexKBQA represents a significant advancement towards exploring better integration of large and lightweight models. Code is available at https://github.com/leezythu/FlexKBQA.},
+  booktitle = {Proceedings of the Thirty-Eighth AAAI Conference on Artificial Intelligence and Thirty-Sixth Conference on Innovative Applications of Artificial Intelligence and Fourteenth Symposium on Educational Advances in Artificial Intelligence},
+  articleno = {2075},
+  numpages = {9},
+  series = {AAAI'24/IAAI'24/EAAI'24},
+  arxiv = {https://arxiv.org/abs/2308.12060},
+  code = {https://github.com/leezythu/FlexKBQA}
 }
 
 @ARTICLE{10634137,
@@ -32,7 +39,10 @@
   number={12},
   pages={8996-9010},
   keywords={Cognition;Task analysis;Data models;Training;Logic;Structured Query Language;Natural languages;Self training;tabular reasoning;unsupervised data generation},
-  doi={10.1109/TKDE.2024.3439405}}
+  doi={10.1109/TKDE.2024.3439405},
+  arxiv={https://arxiv.org/abs/2212.10097},
+  code={https://github.com/leezythu/UCTR-ST}
+}
 
 
 @misc{li2023faacfacialanimationgeneration,
@@ -43,4 +53,6 @@
       archivePrefix={arXiv},
       primaryClass={cs.CV},
       url={https://arxiv.org/abs/2312.03775}, 
+      arxiv={https://arxiv.org/abs/2312.03775},
+      code={https://github.com/fansunqi/FacialVideoGeneration}
 }
