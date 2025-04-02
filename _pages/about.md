@@ -31,6 +31,6 @@ I’m an incoming CS PhD student at [Tsinghua University](https://www.tsinghua.e
 
 I obtained my Bachelor’s degree in Computer Science from Tsinghua University. You may find my CV here: Sunqi’s Curriculum Vitae. Feel free to reach out to me via email if you have any questions or just want to chat!
 
-E-mail: stephensunqifan@gmail.com
+Email: stephensunqifan@gmail.com
 
 [Google Scholar](https://scholar.google.com/citations?hl=en&user=OK8a4mMAAAAJ) / [Github](https://github.com/fansunqi) / [Twitter](https://x.com/Sunqi_Fan) / [LinkedIn](https://www.linkedin.com/in/sunqi-fan-294150211/)
