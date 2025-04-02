@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-FlexKBQA<a href="https://arxiv.org/abs/2308.12060"> is accepted by AAAI 2024 as oral presentation. 
+<a href="https://arxiv.org/abs/2308.12060">FlexKBQA</a> is accepted by AAAI 2024 as oral presentation. 
