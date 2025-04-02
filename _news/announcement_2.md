@@ -5,5 +5,5 @@ inline: true
 related_posts: false
 ---
 
-Begin my journey to pursue a CS Ph.D.
+Begin my journey to pursue a CS PhD.
 
