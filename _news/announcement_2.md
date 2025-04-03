@@ -5,5 +5,5 @@ inline: true
 related_posts: false
 ---
 
-Begin my journey to pursue a CS PhD.
+Begin my journey to pursue a CS PhD at Tsinghua University.
 
