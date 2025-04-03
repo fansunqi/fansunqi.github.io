@@ -41,8 +41,8 @@ ninja.data = [{
       },{id: "news-flexkbqa-is-accepted-by-aaai-2024-as-oral-presentation",
           title: 'FlexKBQA is accepted by AAAI 2024 as oral presentation.',
           description: "",
-          section: "News",},{id: "news-begin-my-journey-to-pursue-a-cs-phd",
-          title: 'Begin my journey to pursue a CS PhD.',
+          section: "News",},{id: "news-begin-my-journey-to-pursue-a-cs-phd-at-tsinghua-university",
+          title: 'Begin my journey to pursue a CS PhD at Tsinghua University.',
           description: "",
           section: "News",},{
         id: 'social-email',
