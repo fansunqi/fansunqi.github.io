@@ -193,7 +193,6 @@ exclude:
   - vendor
   - _books/
   - _projects/
-  - _pages/blog.md
   - _pages/dropdown.md
 keep_files:
   - CNAME
