@@ -29,4 +29,4 @@ I obtained my Bachelor’s degree in Computer Science from Tsinghua University. 
 
 Email: [stephensunqifan@gmail.com](mailto:stephensunqifan@gmail.com)
 
-[Google Scholar](https://scholar.google.com/citations?hl=en&user=OK8a4mMAAAAJ) / [Github](https://github.com/fansunqi) / [Twitter](https://x.com/Sunqi_Fan)
+[Google Scholar](https://scholar.google.com/citations?hl=en&user=OK8a4mMAAAAJ) / [Github](https://github.com/fansunqi) / [Twitter](https://x.com/Sunqi_Fan) / [LinkedIn](https://www.linkedin.com/in/sunqi-fan-294150211/)
