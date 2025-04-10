@@ -2,7 +2,7 @@
 layout: page
 permalink: /publications/
 title: publications
-description: publications by time.
+description: publications and preprints by year.
 nav: true
 nav_order: 2
 ---
